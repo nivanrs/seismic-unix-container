@@ -23,7 +23,7 @@ RUN cp download su.tar.gz
 RUN tar xfz su.tar.gz
 WORKDIR $CWPROOT/src
 
-RUN make install \
+RUN make install -y \
     && make xtinstall \
     && make finstall \
     && make mglinstall \
