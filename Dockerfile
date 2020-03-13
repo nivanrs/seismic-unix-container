@@ -48,3 +48,4 @@ RUN cd /usr/local/bin/ \
     && for f in /root/cwp/bin/*; do \
          ln -s /root/cwp/trampoline.sh `basename $f`; \
        done\
+CMD [/bin/bash]
